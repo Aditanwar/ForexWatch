@@ -8,13 +8,23 @@
         "axios": "^1.7.9",
         "bcryptjs": "^2.4.3",
         "cors": "^2.8.5",
-        "dotenv": "^16.4.7",
-        "express": "^4.21.2",
-        "jsonwebtoken": "^9.0.2",
-        "mongoose": "^8.9.5",
-        "twilio": "^5.4.2"
-    },
-    "engines": {
-        "node": "18.x"
-    }
-}
+        {
+            "name": "forexwatch-root",
+            "version": "1.0.0",
+            "scripts": {
+                "build": "cd client && npm install && npm run build"
+            },
+            "dependencies": {
+                "axios": "^1.7.9",
+                "bcryptjs": "^2.4.3",
+                "cors": "^2.8.5",
+                "dotenv": "^16.4.7",
+                "express": "^4.21.2",
+                "jsonwebtoken": "^9.0.2",
+                "mongoose": "^8.9.5",
+                "twilio": "^5.4.2"
+            },
+            "engines": {
+                "node": "20.x"
+            }
+        }
