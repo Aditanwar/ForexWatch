@@ -8,6 +8,8 @@ import AlertList from './components/AlertList';
 import Login from './pages/Login';
 import Register from './pages/Register';
 
+import About from './pages/About';
+
 const Dashboard = () => {
   const [refreshTrigger, setRefreshTrigger] = useState(0);
   const { isAuthenticated, loading } = useContext(AuthContext);
@@ -35,6 +37,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Dashboard />} />
+            <Route path="/about" element={<About />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
           </Routes>
