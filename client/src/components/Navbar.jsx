@@ -11,6 +11,7 @@ const Navbar = () => {
 
     const authLinks = (
         <div className="flex items-center space-x-4">
+            <Link to="/dashboard" className="text-gray-300 hover:text-white transition">Dashboard</Link>
             <span className="text-gray-300">Hello, {user && user.username}</span>
             <button onClick={onLogout} className="text-gray-300 hover:text-white transition">
                 Logout
@@ -20,7 +21,6 @@ const Navbar = () => {
 
     const guestLinks = (
         <div className="flex items-center space-x-4">
-            <Link to="/about" className="text-gray-300 hover:text-white transition">About</Link>
             <Link to="/login" className="text-gray-300 hover:text-white transition">Login</Link>
             <Link to="/register" className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded transition">Register</Link>
         </div>
